@@ -1,0 +1,32 @@
+router — Commercial Software License Notice
+Copyright (c) 2026 AutoDRL. All rights reserved.
+
+router is proprietary, commercially licensed software. There is no free,
+community, open-source, evaluation, or unlicensed edition. Every binary that is
+published or distributed requires a paid license purchased from AutoDRL and a
+valid, device-bound activation issued through the router authorization system
+before it may provide any normal service, including DNS updates and the web
+management interface.
+
+No permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense, rent, lease, sell, or otherwise make the software available except
+under a separate written commercial license agreement from AutoDRL. Possession
+of a binary, an installation package, or this notice does not grant a license to
+run it without activation.
+
+A binary that is not activated, whose license has expired, whose activation
+material has been modified, or whose device does not match the license is
+designed to refuse service and exit with status code 3. Circumventing or
+attempting to circumvent the licensing or device-binding mechanism is
+prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+AUTODRL BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE, EXCEPT TO THE
+EXTENT A SEPARATE WRITTEN COMMERCIAL AGREEMENT PROVIDES OTHERWISE.
+
+Licensing, purchase, activation, and support:
+https://router.roboter.site
