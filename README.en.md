@@ -13,7 +13,7 @@ router watches the machine's public IPv4 and IPv6 addresses and keeps the A and 
 
 ## Project statistics
 
-The badges below are updated in real time by [Shields.io](https://shields.io) from GitHub's public metrics. Download totals cover assets published in Releases; per-asset counts are shown on each Release page. The badges begin showing actual data once the repository is public and the first Release is published.
+The badges below are updated in real time by [Shields.io](https://shields.io) from GitHub's public metrics. Download totals cover assets published in Releases; per-asset counts are shown on each Release page.
 
 | Metric | Live value |
 | --- | --- |
@@ -46,7 +46,7 @@ Version 0.1.0 ships **34 builds**: 31 single-provider builds, a pure-China build
 | Global | `global` | 20 | Only DNS services outside mainland China; no mainland-China provider is compiled in |
 | Single-provider | provider ID, for example `cloudflare` | 1 | One provider only, with the smallest binary and dependency surface |
 
-Both `cn` and `global` include the two neutral components (HiPM DNS Manager and the generic callback). Their provider counts therefore overlap, but together they still cover all 31 providers exactly once. If your configuration names a provider that is not compiled into the binary you are running, switch to a build that includes it; `router provider list` shows exactly what the current binary contains.
+Both `cn` and `global` include the two neutral components (HiPM DNS Manager and the generic callback). Their provider counts therefore overlap, but their union is all 31 providers. If your configuration names a provider that is not compiled into the binary you are running, switch to a build that includes it; `router provider list` shows exactly what the current binary contains.
 
 <details>
 <summary><strong>China build (cn): 11 mainland-China providers + 2 neutral components</strong></summary>
@@ -262,6 +262,8 @@ A language selected in the web interface applies to the running service immediat
 
 **Every binary published in this repository is a paid commercial build. There is no free, community or unlicensed trial edition.** Full, `cn`, `global` and single-provider builds alike require a purchased licence and device-bound activation before they serve DNS updates or the web interface.
 
+A commercial licence is a **one-time US$19.90 payment for lifetime use on one device**. Each activation code binds exactly one device; there is no subscription, renewal, free tier or multi-device licence. A second device requires a second activation code.
+
 ```bash
 router license status
 router license device-code
@@ -270,11 +272,11 @@ router license activate <ACTIVATION-CODE>
 
 - `router license device-code` prints a device code. Submit it to the licensing system and complete payment to receive a signed activation code.
 - `router license activate <ACTIVATION-CODE>` activates the target device offline; the client does not depend on a continuous online heartbeat.
-- When the licence is missing, expired, tampered with or bound to another device, `router run`, `router update-now` and the web interface refuse service and exit with status 3. The first activation must be completed through the CLI.
+- When the licence is missing, tampered with or bound to another device, `router run`, `router update-now` and the web interface refuse service and exit with status 3. The first activation must be completed through the CLI.
 - Licences are bound to a device fingerprint; container deployments should set `ROUTER_INSTANCE_ID` explicitly.
 - `license.mode` in the configuration cannot disable or downgrade licence enforcement in published builds; they always require device-bound activation.
 
-Purchase, renewal, deployment and support enquiries: **<https://router.roboter.site>**.
+Purchase, deployment and support enquiries: **<https://router.roboter.site>** or **roboter.site@aliyun.com**.
 
 ## Troubleshooting
 

@@ -13,7 +13,7 @@ router überwacht die öffentlichen IPv4- und IPv6-Adressen des Rechners und hä
 
 ## Projektstatistik
 
-Die folgenden Badges werden von [Shields.io](https://shields.io) in Echtzeit aus den öffentlichen GitHub-Kennzahlen erzeugt. Die Download-Zähler erfassen die in Releases veröffentlichten Assets; die Anzahl je Datei steht auf der jeweiligen Release-Seite. Die Badges zeigen tatsächliche Daten, sobald das Repository öffentlich ist und das erste Release veröffentlicht wurde.
+Die folgenden Badges werden von [Shields.io](https://shields.io) in Echtzeit aus den öffentlichen GitHub-Kennzahlen erzeugt. Die Download-Zähler erfassen die in Releases veröffentlichten Assets; die Anzahl je Datei steht auf der jeweiligen Release-Seite.
 
 | Kennzahl | Aktueller Wert |
 | --- | --- |
@@ -262,6 +262,8 @@ Eine in der Weboberfläche gewählte Sprache gilt sofort für den laufenden Dien
 
 **Jede in diesem Repository veröffentlichte Binärdatei ist ein kostenpflichtiger kommerzieller Build. Es gibt keine kostenlose, Community- oder Testversion.** Vollversion, `cn`, `global` und Anbieter-Builds benötigen gleichermaßen eine erworbene Lizenz und eine gerätegebundene Aktivierung, bevor sie DNS-Einträge aktualisieren oder die Weboberfläche bereitstellen.
 
+Eine kommerzielle Lizenz kostet **einmalig 19,90 US-Dollar für die lebenslange Nutzung auf einem Gerät**. Jeder Aktivierungscode ist an genau ein Gerät gebunden; es gibt kein Abonnement, keine Verlängerung, keine kostenlose Version und keine Mehrgerätelizenz. Ein zweites Gerät benötigt einen zweiten Aktivierungscode.
+
 ```bash
 router license status
 router license device-code
@@ -270,11 +272,11 @@ router license activate <AKTIVIERUNGSCODE>
 
 - `router license device-code` gibt einen Gerätecode aus. Übermitteln Sie ihn an das Lizenzsystem und schließen Sie den Kauf ab, um einen signierten Aktivierungscode zu erhalten.
 - `router license activate <AKTIVIERUNGSCODE>` aktiviert das Zielgerät offline; der Client benötigt keinen laufenden Online-Heartbeat.
-- Fehlt die Lizenz, ist sie abgelaufen, manipuliert oder an ein anderes Gerät gebunden, verweigern `router run`, `router update-now` und die Weboberfläche den Dienst und beenden sich mit Status 3. Die erste Aktivierung muss über die CLI erfolgen.
+- Fehlt die Lizenz, wurde sie manipuliert oder ist sie an ein anderes Gerät gebunden, verweigern `router run`, `router update-now` und die Weboberfläche den Dienst und beenden sich mit Status 3. Die erste Aktivierung muss über die CLI erfolgen.
 - Lizenzen sind an einen Gerätefingerabdruck gebunden; in Containern sollte `ROUTER_INSTANCE_ID` ausdrücklich gesetzt werden.
 - `license.mode` in der Konfiguration kann die Lizenzprüfung veröffentlichter Builds nicht deaktivieren oder herabstufen; sie verlangen immer eine gerätegebundene Aktivierung.
 
-Kauf, Verlängerung, Bereitstellung und Support: **<https://router.roboter.site>**.
+Kauf, Bereitstellung und Support: **<https://router.roboter.site>** oder **roboter.site@aliyun.com**.
 
 ## Fehlerbehebung
 

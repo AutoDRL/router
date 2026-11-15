@@ -13,7 +13,7 @@ router 持续检测本机的公网 IPv4 / IPv6 地址，并把变化同步到 DN
 
 ## 项目统计
 
-以下徽章由 [Shields.io](https://shields.io) 根据 GitHub 的公开数据实时更新。下载量统计所有已发布 Release 的资产；每个安装包的具体下载次数可在对应的 Release 页面查看。仓库公开并发布首个 Release 后，徽章开始显示实际数据。
+以下徽章由 [Shields.io](https://shields.io) 根据 GitHub 的公开数据实时更新。下载量统计所有已发布 Release 的资产；每个安装包的具体下载次数可在对应的 Release 页面查看。
 
 | 指标 | 实时数据 |
 | --- | --- |
@@ -262,6 +262,8 @@ Web 界面中的语言选择会立即对正在运行的服务生效。默认新�
 
 **本仓库发布的所有二进制都是付费商业授权版本，不存在免费版、社区版或未授权试用版。** 无论完整版、`cn`、`global` 还是单服务商版，都必须先购买授权并在目标设备上完成绑定激活，才能提供 DNS 更新或 Web 管理服务。
 
+商用授权为**一次性付款 19.90 美元（US$19.90），终生使用**，每份激活码只绑定一台设备；没有订阅、续期、免费版或多设备授权。第二台设备需要单独购买第二份激活码。
+
 ```bash
 router license status
 router license device-code
@@ -270,11 +272,11 @@ router license activate <激活码>
 
 - `router license device-code` 生成设备码；将此设备码提交到授权系统并完成付费后，会获得签名激活码。
 - `router license activate <激活码>` 在目标设备上完成离线激活；客户端不依赖持续联网心跳。
-- 未激活、授权过期、激活文件被篡改或设备不匹配时，`router run`、`router update-now` 和 Web 管理服务拒绝提供服务，并以状态码 3 退出；首次激活必须通过 CLI 完成。
+- 未激活、激活文件被篡改或设备不匹配时，`router run`、`router update-now` 和 Web 管理服务拒绝提供服务，并以状态码 3 退出；首次激活必须通过 CLI 完成。
 - 授权与设备指纹绑定；容器部署建议显式设置 `ROUTER_INSTANCE_ID`。
 - 配置中的 `license.mode` 不能关闭或降级发布版的授权校验；发布版始终强制设备绑定。
 
-购买、续期、部署与技术支持请通过项目官网 **<https://router.roboter.site>** 联系。
+购买、部署与技术支持请通过项目官网 **<https://router.roboter.site>** 联系我们，或发送邮件至 **roboter.site@aliyun.com**。
 
 ## 常见问题
 
