@@ -41,7 +41,7 @@ Version 0.1.0 umfasst **34 Varianten**: 31 Varianten für je einen Anbieter, ein
 
 | Variante | Kennung im Dateinamen | Anbieter | Geeignet für |
 | --- | --- | --- | --- |
-| Vollversion | keine | 31 | Gemischte Anbieter, unklare Wahl oder wenn ein Linux-/Windows-Systeminstallationspaket benötigt wird |
+| Vollversion | keine | 31 | Gemischte Anbieter, unklare Wahl oder wenn ein Systeminstallationspaket für x86_64-Linux / Windows benötigt wird |
 | China | `cn` | 13 | Ausschließlich DNS-Dienste aus dem chinesischen Festland; keine ausländischen Anbieter werden kompiliert |
 | International | `global` | 20 | Ausschließlich DNS-Dienste außerhalb des chinesischen Festlands; keine Anbieter aus dem Festland werden kompiliert |
 | Ein Anbieter | Anbieter-ID, z. B. `cloudflare` | 1 | Nur ein Anbieter, kleinste Binärdatei und kleinster Abhängigkeitsumfang |
@@ -166,7 +166,7 @@ Für den Hintergrundbetrieb verwenden Sie `./router run --daemon`. Für den daue
 
 ## Systeminstallationspakete (nur Vollversion)
 
-Jedes Installationspaket enthält eine Standardkonfiguration, die von derselben Binärversion erzeugt wurde; bei einer Aktualisierung bleibt Ihre bestehende Konfiguration erhalten.
+Die folgenden Installationspakete gibt es nur für x86_64; für alle anderen Architekturen verwenden Sie das passende Archiv. Jedes Installationspaket enthält eine Standardkonfiguration, die von derselben Binärversion erzeugt wurde; bei einer Aktualisierung bleibt Ihre bestehende Konfiguration erhalten.
 
 | Plattform | Beispieldatei | Installationsbefehl |
 | --- | --- | --- |
