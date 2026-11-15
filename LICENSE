@@ -14,9 +14,9 @@ under a separate written commercial license agreement from AutoDRL. Possession
 of a binary, an installation package, or this notice does not grant a license to
 run it without activation.
 
-A binary that is not activated, whose license has expired, whose activation
-material has been modified, or whose device does not match the license is
-designed to refuse service and exit with status code 3. Circumventing or
+A binary that is not activated, whose activation material has been modified or
+is otherwise invalid, or whose device does not match the license is designed to
+refuse service and exit with status code 3. Circumventing or
 attempting to circumvent the licensing or device-binding mechanism is
 prohibited.
 
@@ -30,3 +30,4 @@ EXTENT A SEPARATE WRITTEN COMMERCIAL AGREEMENT PROVIDES OTHERWISE.
 
 Licensing, purchase, activation, and support:
 https://router.roboter.site
+roboter.site@aliyun.com
