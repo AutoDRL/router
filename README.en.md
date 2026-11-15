@@ -9,7 +9,7 @@
 
 router watches the machine's public IPv4 and IPv6 addresses and keeps the A and AAAA records at your DNS provider in sync with them. It runs as a single native executable with no runtime, package manager or external database; you can manage it through a local web interface or install it as a system service.
 
-> **Licence requirement: no free edition is published in this repository.** Every binary requires a purchased licence and device-bound activation; an unactivated installation cannot provide DNS updates or the web interface and exits with status 3. Purchase and activation: <https://router.roboter.site>; the activation service address is shown by `router license status`.
+> **Licence requirement: no free edition is published in this repository.** Every binary requires a purchased licence and device-bound activation; an unactivated installation cannot provide DNS updates or the web interface and exits with status 3. Purchase and activation: <https://router.roboter.site>; the activation service address is available from `router license status --json`.
 
 ## Project statistics
 

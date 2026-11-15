@@ -9,7 +9,7 @@
 
 router überwacht die öffentlichen IPv4- und IPv6-Adressen des Rechners und hält die A- und AAAA-Einträge beim DNS-Anbieter aktuell. Das Programm läuft als einzelne native ausführbare Datei ohne Laufzeitumgebung, Paketmanager oder externe Datenbank. Sie können es über eine lokale Weboberfläche verwalten oder als Systemdienst betreiben.
 
-> **Lizenzpflicht: In diesem Repository gibt es keine kostenlose Version.** Jede Binärdatei erfordert eine erworbene Lizenz und eine gerätegebundene Aktivierung; ohne Aktivierung kann die Installation weder DNS-Einträge aktualisieren noch die Weboberfläche bereitstellen und beendet sich mit Status 3. Kauf und Aktivierung: <https://router.roboter.site>; die Adresse des Aktivierungsdienstes zeigt `router license status` an.
+> **Lizenzpflicht: In diesem Repository gibt es keine kostenlose Version.** Jede Binärdatei erfordert eine erworbene Lizenz und eine gerätegebundene Aktivierung; ohne Aktivierung kann die Installation weder DNS-Einträge aktualisieren noch die Weboberfläche bereitstellen und beendet sich mit Status 3. Kauf und Aktivierung: <https://router.roboter.site>; die Adresse des Aktivierungsdienstes liefert `router license status --json`.
 
 ## Projektstatistik
 
